@@ -1,0 +1,77 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+h1 {
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #333;
+    margin-top: 30px;
+}
+
+/* Paragraph and list styling */
+p, ul {
+    margin: 10px 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li strong {
+    font-weight: bold;
+    color: #0073e6;
+}
+
+/* Style for the project lists */
+.project-list {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+/* Styling for nested lists */
+.project-list ul {
+    margin-left: 20px;
+    list-style-type: square;
+}
+
+/* Style for each course section */
+.course-section {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.course-section h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+/* Style for links (optional) */
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
