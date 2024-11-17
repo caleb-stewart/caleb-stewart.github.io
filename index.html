@@ -4,124 +4,395 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courses at Eastern Washington University</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
 </head>
-<body>
-    <h1>Courses at Eastern Washington University</h1>
+<body class="bg-light text-dark">
+<div class="container my-5">
+    <div class="container my-5">
+        <!-- Header Section with Flexbox for Image Positioning -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <!-- Caleb's Picture (Upper Left) -->
+            <img src="IMG_1940.jpg" alt="Caleb Stewart" class="img-fluid rounded-circle"
+                 style="width: 250px; height: 250px; object-fit: cover;">
 
-    <!-- Fall 2022 -->
-    <h2>Fall 2022</h2>
-    <ul>
-        <li><strong>CSCD 210: Programming Principles I</strong></li>
-        <p>This course covers fundamental programming concepts including data types, algorithms, and program design, with a focus on writing, debugging, and analyzing computer programs.</p>
-        <li><strong>MATH 231: Linear Algebra</strong></li>
-        <p>This course covers vector geometry, systems of linear equations, matrix algebra, determinants, vector spaces, linear transformations, eigenvalues, and eigenvectors, with practical applications.</p>
-    </ul>
+            <!-- Main Header Text -->
+            <div class="text-center">
+                <h1 class="text-primary mb-2">Caleb Stewart</h1>
+                <h2 class="text-muted mb-4">Eastern Washington University</h2>
+            </div>
 
-    <!-- Winter 2023 -->
-    <h2>Winter 2023</h2>
-    <ul>
-        <li><strong>CSCD 211: Programming Principles II</strong></li>
-        <p>This course builds on Programming Principles I, covering topics such as recursion, polymorphism, inheritance, and data structures like linked lists and array lists.</p>
-    </ul>
+            <!-- Eastern Washington University Logo (Upper Right) -->
+            <img src="Eastern_Washington_Eagles_logo.svg.png" alt="Eastern Washington University Logo" class="img-fluid"
+                 style="height: 200px;">
+        </div>
+        <div class="text-center">
+            <p>
+                <a href="https://www.linkedin.com/in/caleb-stewart-281594274/" target="_blank"
+                   class="btn btn-outline-primary btn-md">LinkedIn</a>
+                <a href="mailto:calebstew32@hotmail.com" class="btn btn-outline-info btn-md">Email</a>
+                <a href="https://github.com/caleb-stewart" target="_blank"
+                   class="btn btn-outline-dark btn-md">GitHub</a>
+            </p>
+        </div>
+        <hr>
+        <!-- Introduction Paragraph -->
+        <p class="text-center text-dark mb-5">
+            Below is a list of courses that Caleb Stewart has completed as part of his Computer Science program at
+            Eastern Washington University. These courses cover a wide range of topics in computer science, from
+            programming fundamentals to advanced algorithms, database systems, and 3D graphics. This collection
+            highlights his academic journey and the skills he has developed throughout his studies.
+        </p>
 
-    <!-- Spring 2023 -->
-    <h2>Spring 2023</h2>
-    <ul>
-        <li><strong>CSCD 212: Object-Oriented Programming with Design Patterns</strong></li>
-        <p>This course delves into advanced object-oriented principles and design patterns, introducing UML class diagrams, unit testing, and code versioning, with practical programming projects.</p>
-        <h3>Relevant Projects:</h3>
-        <ul>
-            <li>Implemented Object-Oriented Design Patterns, including Strategy, Factory, Builder, Observer, Prototype, and Facade, to build and customize a simulated cruise package manager.</li>
-            <li>Delivered a fully functional simulation with multiple customization options, improving my understanding of design patterns and their practical applications.</li>
-        </ul>
-    </ul>
 
-    <!-- Fall 2023 -->
-    <h2>Fall 2023</h2>
-    <ul>
-        <li><strong>CSCD 240: C and UNIX Programming</strong></li>
-        <p>This course covers UNIX programming tools and the C language, focusing on topics like interactive shells, file system structure, system programming, and data structures such as arrays and linked lists.</p>
-        <li><strong>CSCD 327: Relational Database Systems</strong></li>
-        <p>This course covers the basics of relational database systems, focusing on data manipulation language, data definition language, and relational models. Topics include SQL, relational algebra, and entity-relationship modeling.</p>
-        <h3>Relevant Projects:</h3>
-        <ul>
-            <li>Embedded SQL queries into Java using JDBC to create a standalone program, demonstrating the practical integration of databases with Java applications.</li>
-        </ul>
-        <li><strong>CSCD 303: Computer and Information Security</strong></li>
-        <p>This course covers the fundamentals of computing security, including threat types, malware, virus protection, and securing computers and information, with hands-on practice using security tools.</p>
-    </ul>
+        <hr>
 
-    <!-- Winter 2024 -->
-    <h2>Winter 2024</h2>
-    <ul>
-        <li><strong>CSCD 260: Architecture and Organization</strong></li>
-        <p>This course covers the fundamentals of digital computer design and microcomputer systems, with a focus on number systems, Boolean algebra, digital circuits, and assembly language programming.</p>
-        <li><strong>CSCD 300: Data Structures</strong></li>
-        <p>This course focuses on fundamental abstract concepts of data structures and their implementation, with an emphasis on linked lists, stacks, queues, hashing, recursion, complexity analysis of algorithms, and binary search trees.</p>
-        <h3>Relevant Projects:</h3>
-        <ul>
-            <li>Built and implemented multiple types of data structures, including LinkedLists, Stacks, Queues, HashTables, and Binary Trees.</li>
-            <li>Developed and optimized various sorting and traversal algorithms, improving efficiency and understanding of algorithmic design.</li>
-        </ul>
-        <li><strong>CSCD 470: 3D Computer Graphics Principles</strong></li>
-        <p>This course focuses on the theoretical concepts of 3D computer graphics, including rendering techniques, shading models, and object manipulation.</p>
-        <h3>Relevant Projects:</h3>
-        <ul>
-            <li>Calculated per-vertex normals and applied different wave functions to update 3D models.</li>
-            <li>Built various primitive shapes such as circles, tori, tetrahedrons, cylinders, and other 3D objects.</li>
-            <li>Worked with different shading techniques, including Toon shading, Gouraud shading, and Phong shading, to create realistic visual effects.</li>
-            <li>Applied texture mappings and manipulated normal-mapped objects to enhance visual realism.</li>
-            <li>Implemented geometry shaders and tessellation shaders to improve model details and rendering quality.</li>
-            <li>Utilized normal mapping to enhance surface detail and depth perception in rendered objects.</li>
-        </ul>
-    </ul>
+        <!-- Fall 2022 -->
+        <section class="mb-5">
+            <h2 class="text-secondary d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                data-bs-target="#fall2022Content" aria-expanded="false" aria-controls="fall2022Content"
+                style="cursor: pointer;">
+                <span>Fall 2022</span>
+                <i id="fall2022Arrow" class="fas fa-chevron-down"></i>
+            </h2>
+            <div id="fall2022Content" class="collapse">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h4>CSCD 210: Programming Principles I</h4>
+                        <p>Studied fundamental programming concepts including data types, algorithms, and program design, with a focus on writing, debugging, and analyzing computer programs.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>MATH 231: Linear Algebra</h4>
+                        <p>Covered topics in vector geometry, systems of linear equations, matrix algebra, determinants, vector spaces, linear transformations, eigenvalues, and eigenvectors, with practical applications.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-    <!-- Spring 2024 -->
-    <h2>Spring 2024</h2>
-    <ul>
-        <li><strong>CSCD 320: Algorithms</strong></li>
-        <p>This course delves into data structures and algorithms, focusing on algorithmic strategies such as dynamic programming, greedy algorithms, and non-linear data structures like trees and graphs.</p>
-        <h3>Relevant Projects:</h3>
-        <ul>
-            <li>Implemented Priority Queues and worked with graph algorithms such as Bellman-Ford and Dijkstra for shortest path calculations.</li>
-            <li>Explored multiple tree structures, including Binary Trees (BTrees) and Red-Black Trees, for efficient data storage and retrieval.</li>
-            <li>Solved dynamic programming and greedy problems, applying these strategies to optimize solutions for various computational challenges.</li>
-        </ul>
-        <li><strong>CSCD 330: Computer Networks</strong></li>
-        <p>This course covers the fundamental concepts, protocols, and programming skills for computer networks, including telecommunication media, Internet protocols, and network layers. It also explores hands-on networking and security practices.</p>
-        <h3>Relevant Projects:</h3>
-        <ul>
-            <li>Developed web-based API calls to retrieve information, wrote an API server using the Flask library.</li>
-            <li>Built a TCP client similar to curl and wget, capable of retrieving complete webpages via HTTP.</li>
-            <li>Utilized the Python library Scapy to build packets, complete a three-way handshake, and send a valid GET request.</li>
-            <li>Created a custom TCP traceroute tool using Scapy to trace the route of network packets.</li>
-            <li>Created and networked four virtual machines, one acting as a router with three users, simulating a network setup.</li>
-        </ul>
-        <li><strong>CSCD 350: Software Development Principles</strong></li>
-        <p>This course covers the principles and tools for designing, analyzing, and maintaining large software systems, including project management, verification, and testing techniques.</p>
-        <h3>Relevant Projects:</h3>
-        <ul>
-            <li>Developed ParkSmart, a parking management system in an agile environment, working on both front-end and back-end development.</li>
-            <li>Implemented key system components using Python Flask, SQLAlchemy, and JavaScript, ensuring a scalable solution for managing hundreds of parking lots dynamically.</li>
-        </ul>
-    </ul>
 
-    <!-- Fall 2024 -->
-    <h2>Fall 2024</h2>
-    <ul>
-        <li><strong>CSCD 377: Introductory Computer Graphics</strong></li>
-        <p>This course introduces the concepts and techniques of 3D modeling and animation using OpenGL Shading Language, focusing on primitive building blocks and the underlying principles of computer graphics.</p>
-        <li><strong>CSCD 340: Operating Systems</strong></li>
-        <p>This course covers the design and modeling of operating systems, including memory management, system protection mechanisms, CPU scheduling, and file systems.</p>
-        <h3>Relevant Projects:</h3>
-        <ul>
-            <li>Worked with a team to build a functioning operating system using Intel x86 assembly and C, focusing on memory management.</li>
-            <li>Implemented the memory management unit (MMU), including the heap and paging systems to manage memory efficiently.</li>
-        </ul>
-        <li><strong>CSCD 439: Flight Simulation</strong></li>
-        <p>This course involves working on a flight simulation system, applying computer science concepts in modeling and simulation, as well as enhancing real-time systems.</p>
-    </ul>
+        <!-- Winter 2023 -->
+        <section class="mb-5">
+            <h2 class="text-secondary d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                data-bs-target="#winter2023Content" aria-expanded="false" aria-controls="winter2023Content"
+                style="cursor: pointer;">
+                <span>Winter 2023</span>
+                <i id="winter2023Arrow" class="fas fa-chevron-down"></i>
+            </h2>
+            <div id="winter2023Content" class="collapse">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h4>CSCD 211: Programming Principles II</h4>
+                        <p>Studied advanced programming concepts building on Programming Principles I, including recursion, polymorphism, inheritance, and data structures such as linked lists and array lists.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>MATH 300: Discrete Mathematics</h4>
+                        <p>Covered foundational and implementation topics in mathematics relevant to computer science, including logic, induction, recursion, set theory, modular arithmetic, graph theory, and matrix operations (e.g., systems of linear equations and graph representations).</p>
+                </ul>
+            </div>
+        </section>
 
+
+        <!-- Spring 2023 -->
+        <section class="mb-5">
+            <h2 class="text-secondary d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                data-bs-target="#spring2023Content" aria-expanded="false" aria-controls="spring2023Content"
+                style="cursor: pointer;">
+                <span>Spring 2023</span>
+                <i id="spring2023Arrow" class="fas fa-chevron-down"></i>
+            </h2>
+            <div id="spring2023Content" class="collapse">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h4>CSCD 212: Object-Oriented Programming with Design Patterns</h4>
+                        <p>Studied advanced object-oriented principles and design patterns, including UML class diagrams, unit testing, and code versioning, with hands-on programming projects.</p>
+                        <h5 class="mt-3">Relevant Projects:</h5>
+                        <ul>
+                            <li>Implemented Object-Oriented Design Patterns, including Strategy, Factory, Builder,
+                                Observer, Prototype, and Facade, to build and customize a simulated cruise package
+                                manager.
+                            </li>
+                            <li>Delivered a fully functional simulation with multiple customization options, improving
+                                my understanding of design patterns and their practical applications.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>MATH 380: Probability and Statistics</h4>
+                        <p>Studied empirical and theoretical frequency distributions, random variables (discrete and continuous), binomial and normal distributions, descriptive statistics (measures of location, spread, and association), and an introduction to inferential statistics (confidence intervals and hypothesis testing).</p>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- Fall 2023 -->
+        <section class="mb-5">
+            <h2 class="text-secondary d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                data-bs-target="#fall2023Content" aria-expanded="false" aria-controls="fall2023Content"
+                style="cursor: pointer;">
+                <span>Fall 2023</span>
+                <i id="fall2023Arrow" class="fas fa-chevron-down"></i>
+            </h2>
+            <div id="fall2023Content" class="collapse">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h4>CSCD 240: C and UNIX Programming</h4>
+                        <p>Studied UNIX programming tools and the C language, with a focus on interactive shells, file system structure, system programming techniques, and data structures such as arrays and linked lists, including their implementation and use in real-world applications.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>CSCD 327: Relational Database Systems</h4>
+                        <p>Studied the fundamentals of relational database systems, focusing on data manipulation language (DML), data definition language (DDL), and relational models. Topics included SQL, relational algebra, and entity-relationship modeling, with an emphasis on their practical application in database design and management.</p>
+                        <h5 class="mt-3">Relevant Projects:</h5>
+                        <ul>
+                            <li>Embedded SQL queries into Java using JDBC to create a standalone program, demonstrating
+                                the practical integration of databases with Java applications.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>CSCD 303: Computer and Information Security</h4>
+                        <p>Studied the fundamentals of computing security, covering threat types, malware, virus protection, and methods for securing computers and information. Gained hands-on experience using various security tools to apply theoretical concepts in practical scenarios.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- Winter 2024 -->
+        <section class="mb-5">
+            <h2 class="text-secondary d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                data-bs-target="#winter2024Content" aria-expanded="false" aria-controls="winter2024Content"
+                style="cursor: pointer;">
+                <span>Winter 2024</span>
+                <i id="winter2024Arrow" class="fas fa-chevron-up"></i>
+            </h2>
+            <div id="winter2024Content" class="collapse show">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h4>CSCD 260: Architecture and Organization</h4>
+                        <p>Studied the fundamentals of digital computer design and microcomputer systems, exploring number systems, Boolean algebra, digital circuits, and assembly language programming, with a focus on how these concepts apply to modern computing systems.</p>
+                        <h5 class="mt-3">Relevant Project:</h5>
+                        <ul>
+                            <li>Developed a simulated pixel using the Tiva C evaluation board, utilizing 7-segment
+                                displays, potentiometers with ADC, and multiple buttons to represent different pixel
+                                colors.
+                            </li>
+                            <li>Leveraged hardware components to create a hands-on simulation, demonstrating fundamental
+                                concepts in microcontroller systems, hardware integration, and digital circuit design.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>CSCD 300: Data Structures</h4>
+                        <p>Studied fundamental abstract concepts of data structures and their implementation, with an emphasis on linked lists, stacks, queues, hashing, recursion, complexity analysis of algorithms, and binary search trees.</p>
+                        <h5 class="mt-3">Relevant Projects:</h5>
+                        <ul>
+                            <li>Built and implemented multiple types of data structures, including LinkedLists, Stacks,
+                                Queues, HashTables, and Binary Trees.
+                            </li>
+                            <li>Developed and optimized various sorting and traversal algorithms, improving efficiency
+                                and understanding of algorithmic design.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>CSCD 470: 3D Computer Graphics Principles</h4>
+                        <p>Studied basic and advanced theoretical concepts in 3D computer graphics using OpenGL and C, illustrated through 3D rendering software to understand practical applications.</p>
+                        <h5 class="mt-3">Relevant Projects:</h5>
+                        <ul>
+                            <li>Calculated per-vertex normals and applied different wave functions to update 3D
+                                models.
+                            </li>
+                            <li>Built various primitive shapes such as circles, tori, tetrahedrons, cylinders, and other
+                                3D objects.
+                            </li>
+                            <li>Worked with different shading techniques, including Toon shading, Gouraud shading, and
+                                Phong shading, to create realistic visual effects.
+                            </li>
+                            <li>Applied texture mappings and manipulated normal-mapped objects to enhance visual
+                                realism.
+                            </li>
+                            <li>Implemented geometry shaders and tessellation shaders to improve model details and
+                                rendering quality.
+                            </li>
+                            <li>Utilized normal mapping to enhance surface detail and depth perception in rendered
+                                objects.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- Spring 2024 -->
+        <section class="mb-5">
+            <h2 class="text-secondary d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                data-bs-target="#spring2024Content" aria-expanded="false" aria-controls="spring2024Content"
+                style="cursor: pointer;">
+                <span>Spring 2024</span>
+                <i id="spring2024Arrow" class="fas fa-chevron-up"></i>
+            </h2>
+            <div id="spring2024Content" class="collapse show">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h4>CSCD 320: Algorithms</h4>
+                        <p>Studied advanced data structures and algorithms, focusing on algorithmic strategies such as dynamic programming, greedy algorithms, and non-linear data structures like trees and graphs, with an emphasis on optimizing problem-solving approaches and improving computational efficiency.</p>
+                        <h5 class="mt-3">Relevant Projects:</h5>
+                        <ul>
+                            <li>Implemented Priority Queues and worked with graph algorithms such as Bellman-Ford and
+                                Dijkstra for shortest path calculations.
+                            </li>
+                            <li>Explored and implemented multiple tree structures, including BTrees and Red-Black Trees,
+                                for
+                                efficient data storage and retrieval.
+                            </li>
+                            <li>Solved dynamic programming and greedy problems, applying these strategies to optimize
+                                solutions for various computational challenges.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>CSCD 330: Computer Networks</h4>
+                        <p>Studied fundamental concepts, protocols, and programming skills for computer networks, including telecommunication media, Internet protocols, and network layers, with a focus on practical networking and security practices.</p>
+                        <h5 class="mt-3">Relevant Projects:</h5>
+                        <ul>
+                            <li>Developed web-based API calls to retrieve information, wrote an API server using the
+                                Flask
+                                library.
+                            </li>
+                            <li>Built a TCP client similar to curl and wget, capable of retrieving complete webpages via
+                                HTTP.
+                            </li>
+                            <li>Utilized the Python library Scapy to build packets, complete a three-way handshake, and
+                                send
+                                a valid GET request.
+                            </li>
+                            <li>Created a custom TCP traceroute tool using Scapy to trace the route of network
+                                packets.
+                            </li>
+                            <li>Created and networked four virtual machines, one acting as a router with three users,
+                                simulating a network setup.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>CSCD 350: Software Development Principles</h4>
+                        <p>Studied the principles and tools essential for designing, analyzing, and maintaining large-scale software systems, covering key areas such as project management, software verification, testing techniques, and strategies for ensuring system reliability and performance throughout the software development lifecycle.</p>
+                        <h5 class="mt-3">Relevant Projects:</h5>
+                        <ul>
+                            <li>Developed <strong>ParkSmart</strong>, a parking management system in an agile
+                                environment, working on both front-end and back-end development.
+                            </li>
+                            <li>Implemented key system components using <strong>Python Flask</strong>, <strong>SQLAlchemy</strong>,
+                                and <strong>JavaScript</strong>, ensuring a scalable solution for managing hundreds of
+                                parking lots dynamically.
+                            </li>
+                            <li>Created and designed documentation for each step of the project.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- Fall 2024 -->
+        <section class="mb-5">
+            <h2 class="text-secondary d-flex justify-content-between align-items-center " data-bs-toggle="collapse"
+                data-bs-target="#fall2024Content" aria-expanded="false" aria-controls="fall2024Content"
+                style="cursor: pointer;">
+                <span>Fall 2024</span>
+                <i id="fall2024Arrow" class="fas fa-chevron-up"></i>
+            </h2>
+            <div id="fall2024Content" class="collapse show">
+                <ul class="list-group">
+                    <!-- CSCD 377: Introductory Computer Graphics -->
+                    <li class="list-group-item">
+                        <h4>CSCD 377: Introductory Computer Graphics</h4>
+                        <p>Studied the concepts and techniques of 3D modeling and animation using OpenGL Shading Language (GLSL), focusing on the creation of primitive building blocks and understanding the underlying principles of computer graphics, with hands-on experience in rendering and manipulating 3D models.</p>
+                    </li>
+                    <!-- CSCD 340: Operating Systems -->
+                    <li class="list-group-item">
+                        <h4>CSCD 340: Operating Systems</h4>
+                        <p>Studied the design and modeling of operating systems, covering CPU virtualization, memory virtualization, concurrency, file systems, and data storage, with an emphasis on how these components interact to optimize system performance and resource management.</p>
+                        <h5 class="mt-3">Relevant Projects:</h5>
+                        <ul>
+                            <li>Worked with a team to build a functioning operating system using Intel x86 assembly and
+                                C,
+                                focusing on memory management.
+                            </li>
+                            <li>Implemented the memory management unit (MMU), including the heap and paging systems to
+                                manage memory efficiently.
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- CSCD 439: Flight Simulation -->
+                    <li class="list-group-item">
+                        <h4>CSCD 439: Flight Simulation</h4>
+                        <p>Studied game development with a focus on multiplayer environments, covering aircraft, avionics, terrain, weather, navigation, and cultural features. Explored real-world applications like training simulations and entertainment, including systems like Microsoft Flight Simulator and full-motion simulators. Examined software/hardware architecture and graphics.</p>
+                        <h5 class="mt-3">Relevant Projects:</h5>
+                        <ul>
+                            <li>Developed a basic flight control system where the airplane moves based on its facing
+                                direction, with control over pitch, yaw, and speed.
+                            </li>
+                            <li>Developed a procedural terrain generation system using guided random techniques,
+                                including mesh creation, elevation mapping, and noise addition, and integrated simple
+                                cultural features like human-made objects onto the terrain.
+                            </li>
+                            <li>Implemented both low-level control systems (elevator, aileron, rudder, power, and flaps)
+                                for direct manipulation of aircraft components, and medium-level control systems (pitch,
+                                roll, and speed) for achieving stable flight states, making the airplane simulation more
+                                realistic and engaging.
+                            </li>
+                            <li>Demonstrated basic navigation by programming the airplane to fly between predefined
+                                waypoints, where air traffic control (ATC) issues explicit and implicit commands to
+                                perform complex maneuvers based on the aircraft’s current state.
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <p style="font-size: 0.9em; color: gray; text-align: center; margin-top: 20px;">
+            Note: Not all projects are publicly available on GitHub due to academic integrity concerns. Sharing certain
+            code could encourage cheating and violate academic policies.
+        </p>
+
+
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+    <script>
+        // Bootstrap collapse event listener for any collapsible section
+        document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(function (button) {
+            // Get the corresponding collapse target and arrow icon
+            var collapseElement = document.getElementById(button.getAttribute('data-bs-target').substring(1)); // Remove "#" to get the target ID
+            var arrowIcon = button.querySelector('i');
+
+            // Add event listeners for collapse show and hide events
+            collapseElement.addEventListener('show.bs.collapse', function () {
+                // Change the arrow to up when content is shown
+                arrowIcon.classList.remove('fa-chevron-down');
+                arrowIcon.classList.add('fa-chevron-up');
+            });
+
+            collapseElement.addEventListener('hide.bs.collapse', function () {
+                // Change the arrow to down when content is hidden
+                arrowIcon.classList.remove('fa-chevron-up');
+                arrowIcon.classList.add('fa-chevron-down');
+            });
+        });
+    </script>
 </body>
 </html>
+				
