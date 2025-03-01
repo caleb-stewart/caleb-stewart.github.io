@@ -192,7 +192,7 @@
             <span>Winter 2024</span>
             <i id="winter2024Arrow" class="fas fa-chevron-up"></i>
         </h2>
-        <div id="winter2024Content" class="collapse show">
+        <div id="winter2024Content" class="collapse">
             <ul class="list-group">
                 <li class="list-group-item">
                     <h4>CSCD 260: Architecture and Organization</h4>
@@ -264,7 +264,7 @@
             <span>Spring 2024</span>
             <i id="spring2024Arrow" class="fas fa-chevron-up"></i>
         </h2>
-        <div id="spring2024Content" class="collapse show">
+        <div id="spring2024Content" class="collapse">
             <ul class="list-group">
                 <li class="list-group-item">
                     <h4>CSCD 320: Algorithms</h4>
@@ -344,7 +344,7 @@
             <span>Fall 2024</span>
             <i id="fall2024Arrow" class="fas fa-chevron-up"></i>
         </h2>
-        <div id="fall2024Content" class="collapse show">
+        <div id="fall2024Content" class="collapse">
             <ul class="list-group">
                 <!-- CSCD 377: Introductory Computer Graphics -->
                 <li class="list-group-item">
@@ -402,6 +402,55 @@
             </ul>
         </div>
     </section>
+
+    <section class="mb-5">
+        <h2 class="text-secondary d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+            data-bs-target="#winter2025Content" aria-expanded="false" aria-controls="winter2025Content"
+            style="cursor: pointer;">
+            <span>Winter 2025</span>
+            <i id="winter2025Arrow" class="fas fa-chevron-down"></i>
+        </h2>
+
+        <div id="winter2025Content" class="collapse">
+            <ul class="list-group">
+                <!-- CSCD 430: Big Data Analytics -->
+                <li class="list-group-item">
+                    <h4>CSCD 430: Big Data Analytics</h4>
+                    <p>Studied the fundamental concepts and practices of big data computing, focusing on the challenges that arise when data size exceeds the capacity of traditional analytics systems. Explored tools and technologies such as HDFS, MapReduce, and Spark for processing large datasets. The course covered various techniques for analyzing both structured and unstructured data, including tasks like finding similar items, mining data streams, and link analysis. It also examined methods for mining graphs and implementing recommendation systems, providing hands-on experience in applying analytics algorithms to manage, mine, and analyze big data across a variety of real-world applications.</p>
+                </li>
+
+                <li class="list-group-item">
+                    <h4>CSCD 484: Machine Learning</h4>
+                    <p>Studied various methods for learning and recognizing patterns in data, focusing on supervised learning models such as the perceptron learning algorithm, linear regression and its nonlinear transformation, logistic regression, neural networks, and model ensembles. The course emphasized understanding the underlying mechanics of these models, explaining how and why they are effective for pattern recognition.</p>
+                    <h5 class="mt-3">Relevant Projects:</h5>
+                    <ul>
+                        <li>Developed a perceptron model to classify binary data.</li>
+                        <li>Implemented a linear regression model for predictive analysis on continuous data.</li>
+                        <li>Built a logistic regression model to classify data into two categories.</li>
+                        <li>Created a neural network to distinguish handwritten digits (MNIST dataset) using forward feeding and backpropagation. The network was trained using stochastic gradient descent, adjusting the weights through backpropagation to minimize the error and improve prediction accuracy on the validation dataset.</li>
+                    </ul>
+                </li>
+
+
+
+                <li class="list-group-item">
+                    <h4>CSCD 488: Senior Project</h4>
+                    <p>Participated in the first part of a two-quarter project sequence, applying computer science principles to develop a specified project. Utilized appropriate tools, systems, and management skills to support project development.</p>
+                    <h5 class="mt-3">Project Details:</h5>
+                    <ul>
+                        <li>Developed a computer vision-based solution designed to help brands, marketing teams, and event organizers measure brand visibility in visual media.</li>
+                        <li>Leveraged machine learning and image recognition techniques to analyze video footage, detect and track specific logos, and measure their screen time.</li>
+                        <li>Created a web-based dashboard where users can upload videos and logo images for analysis.</li>
+                        <li>Generated targeted analytics focused on brand visibility to help marketers evaluate ROI, optimize strategies, and provide actionable sponsorship insights.</li>
+                        <li>Designed the solution to be versatile across different media forms (sports, concerts, dashcam footage) and accessible to users without extensive technical skills.</li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+    </section>
+
     <p style="font-size: 0.9em; color: gray; text-align: center; margin-top: 20px;">
         Note: Not all projects are publicly available on GitHub due to academic integrity concerns. Sharing certain
         code could encourage cheating and violate academic policies.
@@ -415,6 +464,8 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+<script src="CourseSorting.js"></script>
 
 <script>
     // Bootstrap collapse event listener for any collapsible section
